@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Bekah Sawit</title>
 </head>
 
@@ -28,9 +28,11 @@
                     <p> <i class='bx bxs-phone-call'></i> 0822-7845-XXXX</p>
                 </div>
                 <div class="col-auto social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100071366413355"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://goo.gl/maps/99EeJrotBTJYKpzNA"><i class="bi bi-geo-alt-fill"></i></a>       
-                    <a href="https://instagram.com/_berkahsawit?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071366413355"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://goo.gl/maps/99EeJrotBTJYKpzNA"><i class="bi bi-geo-alt-fill"></i></a>
+                    <a href="https://instagram.com/_berkahsawit?igshid=YmMyMTA2M2Y="><i
+                            class='bx bxl-instagram'></i></a>
                 </div>
             </div>
         </div>
@@ -71,7 +73,8 @@
                         <a class="nav-link" href="logout.php">LOG OUT</a>
                     </li> -->
                 </ul>
-                <a href="login.php" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">login</a>
+                <a href="login.php" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">login</a>
             </div>
         </div>
     </nav>
@@ -134,7 +137,8 @@
                                 <img src="img/icon5.png" alt="">
                                 <div class="ms-4">
                                     <h5>MISI</h5>
-                                    <p>Membantu para petani sawit yang membutuhkan bibit berkulitas agar mendapatkan hasil
+                                    <p>Membantu para petani sawit yang membutuhkan bibit berkulitas agar mendapatkan
+                                        hasil
                                         panen yang optimal
                                     </p>
                                 </div>
@@ -157,7 +161,7 @@
                     <h1 class="display-9">99K+</h1>
                     <p class="mb-0">Penjualan Bibit</p>
                 </div>
-                <!-- <div class="col-lg-2 col-sm-6">
+                {{-- <div class="col-lg-2 col-sm-6">
                     <h1 class="display-4">45M</h1>
                     <p class="mb-0">Lines of code</p>
                 </div>
@@ -168,17 +172,10 @@
                 <div class="col-lg-2 col-sm-6">
                     <h1 class="display-4">380K</h1>
                     <p class="mb-0">YouTube Subscribers</p>
-                </div> -->
+                </div>  --}}
             </div>
         </div>
     </section>
-
-
-
-
-
-	
-
 
     <!-- Monitoring -->
     <section id="monitoring" class="text-center">
@@ -187,26 +184,68 @@
                 <div class="col-12">
                     <div class="intro">
                         <h6>KEGIATAN</h6>
-                        
                         <h1>KEGIATAN PEMBIBITAN</h1>
-                        <p class="mx-auto">Menampilkan nilai kelembapan tanah, setatus tanah, status pompa, serta waktu melakukan penyiraman</p>
+                        <p class="mx-auto">Menampilkan nilai kelembapan tanah, setatus tanah, status pompa, serta waktu
+                            melakukan penyiraman</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-5">
+
+            <!-- Elemen 2 Di Bawah -->
+            <!-- Blok Pertama - 3 Elemen Di Atas -->
+            <div class="row">
                 <div class="col-lg-7 col-md-10">
                     <div class="service">
-                        <img src="admin/assets/img/" alt="" class="iconn" >
-                        <h5>Keterangan</h5>
-                        <p>Keterangan</p>
-
+                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
+                        <h5>Keterangan 1</h5>
+                        <p>Keterangan 1</p>
                     </div>
                     <hr>
                 </div>
-                
+
+                <div class="col-lg-7 col-md-10">
+                    <div class="service">
+                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
+                        <h5>Keterangan 2</h5>
+                        <p>Keterangan 2</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-lg-7 col-md-10">
+                    <div class="service">
+                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
+                        <h5>Keterangan 3</h5>
+                        <p>Keterangan 3</p>
+                    </div>
+                    <hr>
+                </div>
             </div>
+
+            <!-- Blok Kedua - 2 Elemen Di Bawah -->
+            <div class="row">
+                <div class="col-lg-7 col-md-10">
+                    <div class="service">
+                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
+                        <h5>Keterangan 4</h5>
+                        <p>Keterangan 4</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-lg-7 col-md-10">
+                    <div class="service">
+                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
+                        <h5>Keterangan 5</h5>
+                        <p>Keterangan 5</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
 
     <section id="team">
@@ -216,7 +255,8 @@
                     <div class="intro">
                         <h6>Team</h6>
                         <h1>Team Members</h1>
-                        <p class="mx-auto">Terus Konsisten Mengembangkan, Dan Selalu Mengutamakan Kebutuhan Konsumen</p>
+                        <p class="mx-auto">Terus Konsisten Mengembangkan, Dan Selalu Mengutamakan Kebutuhan Konsumen
+                        </p>
                     </div>
                 </div>
             </div>
@@ -230,7 +270,6 @@
                             </div>
                             <div class="overlay"></div>
                         </div>
-
                         <h5>Adi Suprasetyo</h5>
                         <p>Marketing Coordinator</p>
                     </div>
@@ -255,11 +294,9 @@
                             <img src="img/edo.png" alt="">
                             <div class="social-icons">
                                 <a href="https://www.facebook.com/hardy.glutera"><i class='bx bxl-facebook'></i></a>
-                    
                             </div>
                             <div class="overlay"></div>
                         </div>
-
                         <h5>Hardi</h5>
                         <p>Penyiraman</p>
                     </div>
@@ -331,13 +368,16 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <h4 class="navbar-brand">BerkahSawit<span class="dot">.</span></h4>
-                        <p>Berkah Sawit adalah pembibitan kelapa sawit yang dikelola dengan teknologi 
-                            penyiraman otomatis berbasis 
-                            <br><i>Internet of things</i> </p>
+                        <p>Berkah Sawit adalah pembibitan kelapa sawit yang dikelola dengan teknologi
+                            penyiraman otomatis berbasis
+                            <br><i>Internet of things</i>
+                        </p>
                         <div class="col-auto social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100071366413355"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://goo.gl/maps/99EeJrotBTJYKpzNA"><i class="bi bi-geo-alt-fill"></i></a>       
-                        <a href="https://instagram.com/_berkahsawit?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram'></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100071366413355"><i
+                                    class='bx bxl-facebook'></i></a>
+                            <a href="https://goo.gl/maps/99EeJrotBTJYKpzNA"><i class="bi bi-geo-alt-fill"></i></a>
+                            <a href="https://instagram.com/_berkahsawit?igshid=YmMyMTA2M2Y="><i
+                                    class='bx bxl-instagram'></i></a>
                         </div>
                     </div>
                 </div>
@@ -350,7 +390,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-body p-0">
@@ -359,24 +400,23 @@
                             <div class="col-lg-4 col-sm-12 bg-cover"
                                 style="background-image: url(img/c2.jpg); min-height:300px;">
                                 <div>
-                                    
+
                                 </div>
                             </div>
                             <div class="col-lg-8">
                                 <form class="p-lg-5 col-12 row g-3" action="" method="POST">
                                     <div>
                                         <h2 class="navbar-brand">BerkahSawit<span class="dot">.</span></h2>
-                                    <p>login Khusus Admin</p>
-                                  
+                                        <p>login Khusus Admin</p>
                                         <div id="login-alert" class="alert alert-danger col-sm-12">
-                                            <ul>hi</ul>
+                                            <ul></ul>
                                         </div>
                                     </div>
                                     <!-- <div class="col-lg-6">
                                         <label for="userName" class="form-label">Username</label>
-                                        <input type="text" class="form-control" 
+                                        <input type="text" class="form-control"
                                             aria-describedby="emailHelp" id="username" value=
-                            
+
                                     <div class="col-6">
                                         <label for="userName" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="password" placeholder="password"
@@ -396,37 +436,41 @@
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-brand">L O G I N</button>
                                     </div> -->
-                                <!-- </form> -->
+                                    <!-- </form> -->
 
 
-                                <form action="" method="POST">
-                                <div class="form-group">
-                                    <label class="sr-only" for="username">Username</label>
-                                    <div class="input-group">
-                                        <input type="text" name="username" class="form-control" id="username" value="username" placeholder="username">                         
-                                       
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="Password">Password</label>
-                                    <div class="input-group">
-                                        <input type="password" name="password" class="form-control" id="password" placeholder="password">
-                
-                                    </div>
-                                    <a href="####" id="emailHelp" class="form-text text-muted text-right">Lost Password?</a>
-                                </div>
-                                <div class="input-group">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input id="login-remember" type="checkbox" name="ingataku" value="1" > Ingat Aku
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" name="login" >L O G I N</button>
-                                </div>
-                                
-                            </form>
+                                    <form action="" method="POST">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="username">Username</label>
+                                            <div class="input-group">
+                                                <input type="text" name="username" class="form-control"
+                                                    id="username" value="username" placeholder="username">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="Password">Password</label>
+                                            <div class="input-group">
+                                                <input type="password" name="password" class="form-control"
+                                                    id="password" placeholder="password">
+
+                                            </div>
+                                            <a href="####" id="emailHelp"
+                                                class="form-text text-muted text-right">Lost Password?</a>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input id="login-remember" type="checkbox" name="ingataku"
+                                                        value="1"> Ingat Aku
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" name="login">L O G I N</button>
+                                        </div>
+
+                                    </form>
                             </div>
                         </div>
                     </div>
