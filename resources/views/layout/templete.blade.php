@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('adminn.halamanadmin') }}">Login</a>
+                        <a class="nav-link" href="{{ url('/adminn') }}">Login</a>
                     </li>
 
 
