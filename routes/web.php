@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.templete');
+});
+// Route::get('/adminn', [AdminController::class, 'halamanadmin'])->name('adminn.halamanadmin');
+
+Route::get('/adminn', function () {
+    return view('adminn.halamanadmin');
 });

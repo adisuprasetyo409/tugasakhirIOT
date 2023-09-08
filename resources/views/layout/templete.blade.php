@@ -55,31 +55,28 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#monitoring">Kegiatan</a>
+                        <a class="nav-link" href="#monitoring">Monitoring</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li> -->
+
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="login.php">LOGIN COK</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">LOG OUT</a>
-                    </li> -->
+                        <a class="nav-link" href="{{ route('adminn.halamanadmin') }}">Login</a>
+                    </li>
+
+
                 </ul>
-                <a href="login.php" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     class="btn btn-brand ms-lg-3">login</a>
             </div>
         </div>
     </nav>
 
-    <!-- SLIDER -->
+    <!-- Home -->
     <div class="owl-carousel owl-theme hero-slider">
         <div class="slide slide1">
             <div class="container">
@@ -151,17 +148,14 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- MILESTONE -->
-    <section id="milestone">
-        <div class="container">
-            <div class="row text-center justify-content-center gy-4">
-                <div class="col-lg-2 col-sm-6">
-                    <h1 class="display-9">99K+</h1>
-                    <p class="mb-0">Penjualan Bibit</p>
-                </div>
-                {{-- <div class="col-lg-2 col-sm-6">
+        <section id="milestone">
+            <div class="container">
+                <div class="row text-center justify-content-center gy-4">
+                    <div class="col-lg-2 col-sm-6">
+                        <h1 class="display-9">99K+</h1>
+                        <p class="mb-0">Penjualan Bibit</p>
+                    </div>
+                    <!-- <div class="col-lg-2 col-sm-6">
                     <h1 class="display-4">45M</h1>
                     <p class="mb-0">Lines of code</p>
                 </div>
@@ -172,9 +166,10 @@
                 <div class="col-lg-2 col-sm-6">
                     <h1 class="display-4">380K</h1>
                     <p class="mb-0">YouTube Subscribers</p>
-                </div>  --}}
+                </div> -->
+                </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <!-- Monitoring -->
@@ -191,63 +186,23 @@
                 </div>
             </div>
 
-            <!-- Elemen 2 Di Bawah -->
-            <!-- Blok Pertama - 3 Elemen Di Atas -->
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-lg-7 col-md-10">
                     <div class="service">
-                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
-                        <h5>Keterangan 1</h5>
-                        <p>Keterangan 1</p>
+                        <img src="admin/assets/img/" alt="" class="iconn">
+                        <h5>Keterangan</h5>
+                        <p></p>
+
                     </div>
                     <hr>
                 </div>
 
-                <div class="col-lg-7 col-md-10">
-                    <div class="service">
-                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
-                        <h5>Keterangan 2</h5>
-                        <p>Keterangan 2</p>
-                    </div>
-                    <hr>
-                </div>
-
-                <div class="col-lg-7 col-md-10">
-                    <div class="service">
-                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
-                        <h5>Keterangan 3</h5>
-                        <p>Keterangan 3</p>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- Blok Kedua - 2 Elemen Di Bawah -->
-            <div class="row">
-                <div class="col-lg-7 col-md-10">
-                    <div class="service">
-                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
-                        <h5>Keterangan 4</h5>
-                        <p>Keterangan 4</p>
-                    </div>
-                    <hr>
-                </div>
-
-                <div class="col-lg-7 col-md-10">
-                    <div class="service">
-                        <img src="admin/assets/img/profile-img.jpg" alt="" class="iconn">
-                        <h5>Keterangan 5</h5>
-                        <p>Keterangan 5</p>
-                    </div>
-                    <hr>
-                </div>
             </div>
 
         </div>
     </section>
 
-
-
+    {{-- Team --}}
     <section id="team">
         <div class="container">
             <div class="row">
@@ -270,6 +225,7 @@
                             </div>
                             <div class="overlay"></div>
                         </div>
+
                         <h5>Adi Suprasetyo</h5>
                         <p>Marketing Coordinator</p>
                     </div>
@@ -305,6 +261,7 @@
         </div>
     </section>
 
+    <!--review-->
     <section class="bg-light" id="reviews">
 
         <div class="owl-theme owl-carousel reviews-slider container">
@@ -340,7 +297,7 @@
                 </div>
                 <i class='bx bxs-quote-alt-left'></i>
             </div>
-            <!-- <div class="review">
+            <div class="review">
                 <div class="person">
                     <img src="img/team_3.jpg" alt="">
                     <h5>Ralph Edwards</h5>
@@ -357,7 +314,7 @@
                     <i class="bx bxs-star-half"></i>
                 </div>
                 <i class='bx bxs-quote-alt-left'></i>
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -408,43 +365,19 @@
                                     <div>
                                         <h2 class="navbar-brand">BerkahSawit<span class="dot">.</span></h2>
                                         <p>login Khusus Admin</p>
+
                                         <div id="login-alert" class="alert alert-danger col-sm-12">
                                             <ul></ul>
                                         </div>
+
                                     </div>
-                                    <!-- <div class="col-lg-6">
-                                        <label for="userName" class="form-label">Username</label>
-                                        <input type="text" class="form-control"
-                                            aria-describedby="emailHelp" id="username" value=
-
-                                    <div class="col-6">
-                                        <label for="userName" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="password" placeholder="password"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="input-group">
-                                    <div class="checkbox">
-                                        <label>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" name="login" >L O G I nN</button>
-                                </div>
-
-
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-brand">L O G I N</button>
-                                    </div> -->
-                                    <!-- </form> -->
-
 
                                     <form action="" method="POST">
                                         <div class="form-group">
                                             <label class="sr-only" for="username">Username</label>
                                             <div class="input-group">
                                                 <input type="text" name="username" class="form-control"
-                                                    id="username" value="username" placeholder="username">
+                                                    id="username" value="" placeholder="username">
 
                                             </div>
                                         </div>
@@ -462,7 +395,7 @@
                                             <div class="checkbox">
                                                 <label>
                                                     <input id="login-remember" type="checkbox" name="ingataku"
-                                                        value="1"> Ingat Aku
+                                                        value="1" ;> Ingat Aku
                                                 </label>
                                             </div>
                                         </div>
