@@ -1,78 +1,3 @@
-<?php
-include 'config/app.php';
-//ambil koneksi dari koneksi.php
-
-// Perintah untuk menampilkan data
-$datakegiatan = select("SELECT * FROM db_kegiatan ORDER BY id DESC");
-
-// perintah untuk membaca dan mengambil data dalam bentuk array
-
-session_start();
-
-//atur variabel
-$err        = "";
-$username   = "";
-$ingataku   = "";
-
-if(isset($_COOKIE['cookie_username'])){
-    $cookie_username = $_COOKIE['cookie_username'];
-    $cookie_password = $_COOKIE['cookie_password'];
-
-    $sql1 = "select * from db_user where username = '$cookie_username'";
-    $q1   = mysqli_query($koneksi,$sql1);
-    $r1   = mysqli_fetch_array($q1);
-    if($r1['password'] == $cookie_password){
-        $_SESSION['session_username'] = $cookie_username;
-        $_SESSION['session_password'] = $cookie_password;
-    }
-}
-
-if(isset($_SESSION['session_username'])){
-    header("location: admin/index.php");
-    exit;
-}
-
-if(isset($_POST['login'])){
-    $username   = isset($_POST['username']) ? $_POST['username'] : '';
-    $password = $_POST['password'];
-    $ingataku   = isset($_POST['ingataku']);
-
-    if($username == '' or $password == ''){
-        $err .= "<li>Silakan masukkan username dan juga password.</li>";
-    }else{
-        $sql1 = "SELECT * FROM db_user where username ='$username'";
-        $qry = mysqli_query($koneksi,$sql1);
-        $num = mysqli_num_rows($qry);
-        $row = mysqli_fetch_array($qry);
-    
-        if ($num==0 OR $username!=$row['username']) {
-            $err .= "<li>Username <b>$username</b> tidak tersedia.</li>";
-        }
-        elseif($row['password'] != md5($password)){
-            $err .= "<li>Password yang dimasukkan tidak sesuai.</li>";
-        }       
-        
-        if(empty($err)){
-            $_SESSION['session_username'] = $username; //server
-            $_SESSION['session_password'] = md5($password);
-
-            if($ingataku == 1){
-                $cookie_name = "cookie_username";
-                $cookie_value = $username;
-                $cookie_time = time() + (60 * 60 * 24 * 30);
-                setcookie($cookie_name,$cookie_value,$cookie_time,"/");
-
-                $cookie_name = "cookie_password";
-                $cookie_value = md5($password);
-                $cookie_time = time() + (60 * 60 * 24 * 30);
-                setcookie($cookie_name,$cookie_value,$cookie_time,"/");
-            }
-            header("location:admin/index.php");
-        }
-    }
-}
-?>
- 
 <!doctype html>
 <html lang="en">
 
@@ -82,12 +7,12 @@ if(isset($_POST['login'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Bekah Sawit</title>
 </head>
 
@@ -268,20 +193,18 @@ if(isset($_POST['login'])){
                     </div>
                 </div>
             </div>
-            <?php foreach ($datakegiatan as $key):?>
             <div class="row g-5">
                 <div class="col-lg-7 col-md-10">
                     <div class="service">
-                        <img src="admin/assets/img/<?= $key['foto']; ?>" alt="" class="iconn" >
+                        <img src="admin/assets/img/" alt="" class="iconn" >
                         <h5>Keterangan</h5>
-                        <p><?=$key["keterangan"]; ?></p>
+                        <p>Keterangan</p>
 
                     </div>
                     <hr>
                 </div>
                 
             </div>
-            <?php endforeach; ?>
         </div>
     </section>
 
@@ -444,11 +367,10 @@ if(isset($_POST['login'])){
                                     <div>
                                         <h2 class="navbar-brand">BerkahSawit<span class="dot">.</span></h2>
                                     <p>login Khusus Admin</p>
-                                    <?php if($err){ ?>
+                                  
                                         <div id="login-alert" class="alert alert-danger col-sm-12">
-                                            <ul><?php echo $err ?></ul>
+                                            <ul>hi</ul>
                                         </div>
-                                    <?php } ?>
                                     </div>
                                     <!-- <div class="col-lg-6">
                                         <label for="userName" class="form-label">Username</label>
@@ -481,7 +403,7 @@ if(isset($_POST['login'])){
                                 <div class="form-group">
                                     <label class="sr-only" for="username">Username</label>
                                     <div class="input-group">
-                                        <input type="text" name="username" class="form-control" id="username" value="<?php echo $username ?>" placeholder="username">                         
+                                        <input type="text" name="username" class="form-control" id="username" value="username" placeholder="username">                         
                                        
                                     </div>
                                 </div>
@@ -496,7 +418,7 @@ if(isset($_POST['login'])){
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="login-remember" type="checkbox" name="ingataku" value="1" <?php if($ingataku == '1') echo "checked"?>> Ingat Aku
+                                            <input id="login-remember" type="checkbox" name="ingataku" value="1" > Ingat Aku
                                         </label>
                                     </div>
                                 </div>
